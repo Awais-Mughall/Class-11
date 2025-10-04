@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .para {
+        border: 2px solid blue;
+        margin: 10px 30px;
+        padding: 10px 30px 50px;
+        :hover {
+          background-color: blue;
+        }
+      }
+      .container {
+        background-color: aqua;
+        width: 100hw;
+        height: 100vh;
+        display: flex;
+        /*
+            
+            justify-content:end;
+            
+            align-items: center;
+            justify-content:space-evenly;*/
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-around;
+      }
+      .red {
+        background-color: slateblue;
+      }
+      .blue {
+        background-color: black;
+      }
+      .yellow {
+        background-color: chartreuse;
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+      }
+      button {
+        background-color: yellow;
+        border-radius: 10px;
+        padding: 10px 10px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: blueviolet;
+        scale: 1.2;
+        transition: all 0.5s ease-in;
+      }
+      .para:hover {
+        background-color: blue;
+      }
+      input:focus {
+        border: 2px;
+        background-color: rgb(67, 140, 164);
+        scale: 1.1;
+      }
+
+    </style>
+  </head>
+  <body>
+    <p class="para">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum aliquid
+      maiores vel, distinctio exercitationem voluptatum quisquam tenetur quis
+      excepturi minima expedita explicabo voluptatem, odio debitis eaque. Atque
+      adipisci eos deserunt!
+    </p>
+
+    <div class="container">
+      <div class="box red"></div>
+      <div class="box blue"></div>
+      <div class="box yellow"></div>
+    </div>
+
+
+    <button>SUBMIT</button> <br>
+
+    <input type="text" placeholder="Enter your name">
+  </body>
+</html>
